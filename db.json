@@ -1,0 +1,54 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "make": "Volvo",
+      "model": "1800s",
+      "year": "1973",
+      "image": "/images/volvo1800.jpg",
+      "price": 7500
+    },
+    {
+      "id": 2,
+      "make": "GMC",
+      "model": "100",
+      "year": "1953",
+      "image": "/images/gmc100.jpg",
+      "price": 5000
+    },
+    {
+      "id": 3,
+      "make": "Packard",
+      "model": "200",
+      "year": "1951",
+      "image": "/images/packard200.jpg",
+      "price": 2200
+    },
+    {
+      "id": 4,
+      "make": "Chevrolet",
+      "model": "Nova",
+      "year": "1972",
+      "image": "/images/chevynova.jpg",
+      "price": 2000
+    },
+    {
+      "id": 5,
+      "make": "Volkswagen",
+      "model": "Beetle",
+      "year": "1957",
+      "image": "/images/vwbeetle.jpg",
+      "price": 12000
+    },
+    {
+      "id": 6,
+      "make": "Datsun",
+      "model": "280Z",
+      "year": "1977",
+      "image": "/images/datsun280z.jpg",
+      "price": 16000
+    }
+    
+  ]
+}
+

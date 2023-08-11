@@ -1,3 +1,16 @@
+
+
+# Hierarchy
+
+- App
+--- NavBar
+-r- HomePage
+-r- Browse (list:detail)
+-r- Post New Listing
+-r- Favorites
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
