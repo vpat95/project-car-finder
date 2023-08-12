@@ -8,9 +8,6 @@ function BrowseCars({cars, onHeartClick, onDeleteClick}){
         sort: 'All'
     })
 
-
-
-
     function sortCars(obj){
         if (formData.sort === 'ascending') {
             return obj.sort((a, b) => a.price-b.price)
@@ -25,7 +22,7 @@ function BrowseCars({cars, onHeartClick, onDeleteClick}){
     const filteredCars = sortedCars
     .filter(car => 
         car.make.toLowerCase().includes(formData.search.toLowerCase()) || 
-        car.model.includes(formData.search) || 
+        car.model.toLowerCase().includes(formData.search.toLocaleLowerCase()) || 
         car.year.includes(formData.search))
     .map(car => <CarCards key = {car.id} car = {car} onHeartClick={onHeartClick} onDeleteClick={onDeleteClick}/>)
 
