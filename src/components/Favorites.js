@@ -1,24 +1,20 @@
-import {useState, useEffect} from 'react'
 import CarCards from "./CarCards"
 import StyledContainer from "./styles/Container.styled"
 
-function Favorites({onHeartClick, renderOnClick, onDeleteClick}){
-    const [favorites, setFavorites] = useState([])
+function Favorites({cars, onHeartClick, onDeleteClick}){
 
-    useEffect(()=>{
-        fetch(`${process.env.REACT_APP_API_URL}/cars`)
-        .then(r => r.json())
-        .then(data => setFavorites(data.map(car => {
+    const favoritedCars = cars.map(car => {
             if (car.favorited === true){
             return <CarCards key={car.id} onHeartClick={onHeartClick} car={car} onDeleteClick={onDeleteClick}/>
-            } else{
+            } else {
                 return null
             }
-        })))
 
-    },[renderOnClick])
+    })
+
+
     
-    if(!favorites.find(car => car))return <h2 style={{textAlign: 'center'}}>Like some vehicles and come back!</h2>
+    if(!favoritedCars.find(car => car))return <h2 style={{textAlign: 'center'}}>Like some vehicles and come back!</h2>
 
     return(
         <StyledContainer>
@@ -26,7 +22,7 @@ function Favorites({onHeartClick, renderOnClick, onDeleteClick}){
                 <h1>Favorites</h1>
             </div>
             <div className="grid">
-                {favorites}
+                {favoritedCars}
             </div>
         </StyledContainer>
         

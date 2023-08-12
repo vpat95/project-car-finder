@@ -1,6 +1,6 @@
 //hooks
 import {Route, Switch} from 'react-router-dom'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 //styles
 import {ThemeProvider} from 'styled-components'
 import GlobalStyles from './components/styles/Global';
@@ -28,6 +28,12 @@ const theme = {
 function App() {
   const [cars, setCars] = useState([])
   const [renderOnClick, setRenderOnClick] = useState(true)
+
+    useEffect(()=>{
+      fetch(`${process.env.REACT_APP_API_URL}/cars`)
+      .then(r => r.json())
+      .then(data => setCars(data))
+  },[setCars])
 
 
   function handleHeart (id, car){
@@ -67,7 +73,7 @@ function handleDelete(id){
               <BrowseCars cars={cars} setCars={setCars} onHeartClick={handleHeart} onDeleteClick={handleDelete}/>
             </Route>
             <Route path ='/favorites'>
-              <Favorites onHeartClick={handleHeart} renderOnClick={renderOnClick} cars={cars} onDeleteClick={handleDelete}/>
+              <Favorites cars={cars} onHeartClick={handleHeart} onDeleteClick={handleDelete}/>
             </Route>
             <Route path ='/upload'>
               <UploadCar cars={cars} setCars={setCars} />

@@ -1,18 +1,15 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import CarCards from './CarCards'
 import StyledContainer from './styles/Container.styled'
 
-function BrowseCars({cars, setCars, onHeartClick, onDeleteClick}){
+function BrowseCars({cars, onHeartClick, onDeleteClick}){
     const [formData, setFormData] = useState({
         search:'',
         sort: 'All'
     })
 
-    useEffect(()=>{
-        fetch(`${process.env.REACT_APP_API_URL}/cars`)
-        .then(r => r.json())
-        .then(data => setCars(data))
-    },[setCars])
+
+
 
     function sortCars(obj){
         if (formData.sort === 'ascending') {
