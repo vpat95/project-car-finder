@@ -29,8 +29,7 @@ function CarDetails(){
                     </div>
                     </div>
                     <div className="Summary">
-                        <h3>The methods themselves usually aren't difficult to understand. Instead, it's more due to the fact that there are so many ways to center things.
-The method you use can vary depending on the HTML element you're trying to center, or whether you're centering it horizontally or vertically.</h3>
+                        <h3>{car.summary}</h3>
                     </div>
                     <hr></hr>
                 <div className="footer">

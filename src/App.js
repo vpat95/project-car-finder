@@ -50,6 +50,8 @@ function handleDelete(id){
     method: 'DELETE',
   })
   setCars(cars.filter(car => car.id !== id))
+  setRenderOnClick(() => !renderOnClick)
+
 }
 
 

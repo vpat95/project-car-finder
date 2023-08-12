@@ -1,15 +1,40 @@
+# Project Car Finder
+
+# Overview
+
+Project Car Finder is a web application meant to connect buyers and sellers in the purchasing and/or selling
+of a project car. Users are able to browse through a list of available cars, add their favorite cars to a watchlist, and create a listing of their own vehicle.
+
+# Technology
+
+This application is written in React.js and features the use of built in React Hooks, external libraries, and custom JavaScript.
+
+Core Concepts:
+- CRUD operations following REST web standards
+- Controlled Forms using state
+- Event Handling to update server and re-render DOM
+- Client side routing
+
+React Hooks Used:
+- useState 
+- useEffect
+
+Libraries Used:
+- react-router-dom (clients side routing)
+- styled components (CSS-in-JS functionality)
+
+# Challenges
+
+One of the challenges faced in this project was avoiding the tempation to use the 'useContext' hook to manange state within the project. Determing where elements of state should live within the component tree initially proved to be slightly challeging however, it was the correct approach as the furthest a prop was required to travel was 3 levels deep.
+
+
+
+
 
 
 # Hierarchy
 
-- App
---- NavBar
--r- HomePage
--r- Browse (list:detail)
--r- Post New Listing
--r- Favorites
-
-
+This 
 
 # Getting Started with Create React App
 
