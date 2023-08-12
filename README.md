@@ -27,7 +27,7 @@ Libraries Used:
 
 One of the challenges faced in this project was avoiding the tempation to use the 'useContext' hook to manange state within the project. Determing where elements of state should live within the component tree initially proved to be slightly challeging however, it was the correct approach as the furthest a prop was required to travel was 3 levels deep.
 
-# Running Locally
+# Run Locally
 
 1. Fork and Clone this directory
 3. Open your terminal and navigate to project directory(../project-car-finder)
