@@ -11,6 +11,8 @@ function Favorites({onHeartClick, renderOnClick, onDeleteClick}){
         .then(data => setFavorites(data.map(car => {
             if (car.favorited === true){
             return <CarCards key={car.id} onHeartClick={onHeartClick} car={car} onDeleteClick={onDeleteClick}/>
+            } else{
+                return null
             }
         })))
 
