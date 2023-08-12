@@ -2,25 +2,25 @@ import styled from 'styled-components'
 
 export const StyledNavBar = styled.header`
     background-color: ${({theme}) => theme.colors.header};
-    padding: 30px 0;
-    text-align: ${({theme}) => theme.textAlign.header};
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+
     color: white;
+    
 
     @media (max-width: 600px){
-        flex-direction: column;
         font-size: 60%;
  
     }
     
-    .company>p{
-        text-align: left;
-        padding-left:5%;
-        margin-top: 0%;
-        font-weight: 900;
+    .links{
+        margin: auto;
+        margin-right: 1%;
+        justify-content: right;
     }
+
 
     a {
         color:white;

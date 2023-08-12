@@ -24,6 +24,13 @@ const GlobalStyles = createGlobalStyle`
     img {
         max-width: 100%
     }
+
+    #footer{
+        height: 2.5rem;
+        position: relative;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
 `
 
 export default GlobalStyles

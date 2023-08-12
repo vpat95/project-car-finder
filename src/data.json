@@ -1,5 +1,4 @@
-{
-  "cars": [
+[
     {
       "id": 1,
       "make": "Volvo",
@@ -16,7 +15,7 @@
       "year": "1953",
       "image": "/images/gmc100.jpg",
       "price": 5000,
-      "favorited": true
+      "favorited": false
     },
     {
       "id": 3,
@@ -43,7 +42,7 @@
       "year": "1957",
       "image": "/images/vwbeetle.jpg",
       "price": 12000,
-      "favorited": true
+      "favorited": false
     },
     {
       "id": 6,
@@ -55,4 +54,3 @@
       "favorited": false
     }
   ]
-}

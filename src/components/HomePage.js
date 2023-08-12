@@ -14,14 +14,14 @@
                 <div className='grid'>
                     <div className="flow">
                         <img src='/images/bmwOld.jpg' alt='unrestored BMW 3 series'/>
-                        <div class="middle">
-                            <div class="text">Before</div>
+                        <div className="middle">
+                            <div className="text">Before</div>
                         </div>
                     </div>
                     <div className="flow">
                         <img src='/images/bmwNew.jpg' alt='unrestored BMW 3 series'/>
-                        <div class="middle">
-                            <div class="text">After</div>
+                        <div className="middle">
+                            <div className="text">After</div>
                         </div>
                     </div>
                 </div>

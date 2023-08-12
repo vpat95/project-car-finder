@@ -1,5 +1,6 @@
 //hooks
 import {Route, Switch} from 'react-router-dom'
+import {useState} from 'react'
 //styles
 import {ThemeProvider} from 'styled-components'
 import GlobalStyles from './components/styles/Global';
@@ -9,6 +10,7 @@ import HomePage from './components/HomePage';
 import BrowseCars from './components/BrowseCars';
 import Favorites from './components/Favorites';
 import UploadCar from './components/UploadCarForm';
+import CarDetails from './components/CarDetails';
 
 
 const theme = {
@@ -24,19 +26,49 @@ const theme = {
 }
 
 function App() {
+  const [cars, setCars] = useState([])
+  const [renderOnClick, setRenderOnClick] = useState(true)
+
+
+  function handleHeart (id, car){
+
+    fetch(`http://localhost:3001/cars/${id}`,{
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({...car, favorited: !car.favorited})
+    })
+    .then(r => r.json())
+    .then(data => setCars(cars.map(car => car.id !== id ? car: data)))
+
+    setRenderOnClick(() => !renderOnClick)
+}
+
+function handleDelete(id){
+  fetch(`http://localhost:3001/cars/${id}`,{
+    method: 'DELETE',
+  })
+  setCars(cars.filter(car => car.id !== id))
+}
+
+
   return (
     <ThemeProvider theme={theme}>
         <GlobalStyles/>
           <NavBar />
           <Switch>
-            <Route path ='/browse'>
-              <BrowseCars />
+          <Route path ='/browse/:id'>
+              <CarDetails cars={cars} setCars={setCars}/>
+            </Route>
+            <Route exact path ='/browse'>
+              <BrowseCars cars={cars} setCars={setCars} onHeartClick={handleHeart} onDeleteClick={handleDelete}/>
             </Route>
             <Route path ='/favorites'>
-              <Favorites />
+              <Favorites onHeartClick={handleHeart} renderOnClick={renderOnClick} cars={cars} onDeleteClick={handleDelete}/>
             </Route>
             <Route path ='/upload'>
-              <UploadCar />
+              <UploadCar cars={cars} setCars={setCars} />
             </Route>
             <Route exact path ='/'>
               <HomePage />

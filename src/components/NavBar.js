@@ -31,7 +31,7 @@ function NavBar(){
                     to='/favorites'
                     activeStyle={activeStyle}
                 >
-                    Watchlist
+                    Favorites
                 </NavLink>
                 <NavLink 
                     to='/upload'

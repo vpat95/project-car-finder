@@ -2,25 +2,26 @@ import styled from 'styled-components'
 
 const StyledContainer = styled.div`
 text-align: left;
-margin: 20px;
-max-width: 100%;
-padding-left: 60px;
-padding-right: 60px;
 
 
 .grid{
     display: grid;
     gap: 5%;
     grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+    padding-top: 1%;
+    margin: 5%;
+    margin-top: 1%;
 
 }
 
-@media (max-width: 40em){
+@media (max-width: 700px){
     padding-left: 0px;
     .grid {
         grid-template-columns:  1fr;
-
-
+    }
+    form{
+        flex-direction: column
     }
 }
 
@@ -55,7 +56,9 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 50px;
+    padding: 2%;
+    margin-left:5%;
+    margin-right: 5%;
 }
 
 input{
@@ -91,18 +94,101 @@ select:focus{
     outline:none;
 }
 
-.buttons{
-    padding:2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 span{
     cursor: pointer;
 }
 
+.card {
+    position: relative;
+}
 
+img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover>img {
+  opacity: 0.3;
+}
+
+.card:hover .middle {
+  opacity: 1;
+}
+a {
+    font-family: 'DM Serif Display', serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.detailedCard{
+    height:50%;
+    width:50%;
+    background:  #fff2de;
+    padding: 1%;
+    border: 1 px solid white;
+    border-radius: 5px;
+    justify-content: center;   
+    margin:auto;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;  
+    margin-top: 2%;
+
+}
+
+.detailedCard .footer>form>input{
+    background-color: #fff2de;
+}
+p{
+    color:gray;
+}
+.stats{
+    display:flex;
+    justify-content: space-around;
+}
+
+form{
+    display:flex;
+}
+
+
+.listForm>form>input{
+    background-color: #fff2de;
+}
+
+form>input[type=submit]{
+    color: black;
+    border: solid black;
+    height: 2.2rem;
+}
+
+h3{
+    color:gray;
+}
+hr{
+    border-top: 2px solid black;
+    width: 90%;
+}
+.listForm > form{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 `
 
 export default StyledContainer
