@@ -30,14 +30,12 @@ One of the challenges faced in this project was avoiding the tempation to use th
 # Run Locally
 
 1. Fork and Clone this directory
-3. Open your terminal and navigate to project directory(../project-car-finder)
-2. Check Dependencies
+2. Open your terminal and navigate to project directory(../project-car-finder)
+3. Check Dependencies
     a. Verify npm is installed by running '$ npm -v'
         - if installed continue to next step 
         - if not installed, vist: https://nodejs.org/en#home-downloadhead and follow instructions
-3. Run npm install -g json-server
 4. In the project directory still, run 'npm install'
-4. Open a second terminal window/tab and run 'npm start server'
 5. In the original terminal run 'npm start'
 6. Once the command completes execution, navigate to the provided link
 
