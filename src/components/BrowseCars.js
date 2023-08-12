@@ -9,7 +9,7 @@ function BrowseCars({cars, setCars, onHeartClick, onDeleteClick}){
     })
 
     useEffect(()=>{
-        fetch('https://project-car-finder-data.onrender.com/cars')
+        fetch(`${process.env.REACT_APP_API_URL}/cars`)
         .then(r => r.json())
         .then(data => setCars(data))
     },[setCars])

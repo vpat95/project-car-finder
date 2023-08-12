@@ -26,7 +26,7 @@ function UploadCar({cars, setCars}){
 
     function handleSubmit(e){
         e.preventDefault()
-        fetch(`https://project-car-finder-data.onrender.com/cars`,{
+        fetch(`${process.env.REACT_APP_API_URL}/cars`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

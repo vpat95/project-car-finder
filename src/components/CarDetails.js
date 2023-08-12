@@ -7,7 +7,7 @@ function CarDetails(){
     const [car, setCar] = useState(null)
 
     useEffect(()=>{
-        fetch(`https://project-car-finder-data.onrender.com/cars/${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}/cars/${id}`)
         .then(r => r.json())
         .then(data => setCar(data))
     },[id])

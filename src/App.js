@@ -32,7 +32,7 @@ function App() {
 
   function handleHeart (id, car){
 
-    fetch(`https://project-car-finder-data.onrender.com/cars/${id}`,{
+    fetch(`${process.env.REACT_APP_API_URL}/cars/${id}`,{
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ function App() {
 }
 
 function handleDelete(id){
-  fetch(`https://project-car-finder-data.onrender.com/cars/${id}`,{
+  fetch(`${process.env.REACT_APP_API_URL}/cars/${id}`,{
     method: 'DELETE',
   })
   setCars(cars.filter(car => car.id !== id))

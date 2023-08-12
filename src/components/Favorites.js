@@ -6,7 +6,7 @@ function Favorites({onHeartClick, renderOnClick, onDeleteClick}){
     const [favorites, setFavorites] = useState([])
 
     useEffect(()=>{
-        fetch('https://project-car-finder-data.onrender.com/cars')
+        fetch(`${process.env.REACT_APP_API_URL}/cars`)
         .then(r => r.json())
         .then(data => setFavorites(data.map(car => {
             if (car.favorited === true){
