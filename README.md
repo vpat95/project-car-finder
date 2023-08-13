@@ -1,6 +1,6 @@
 # Project Car Finder
 
-# Live Site : https://rad-gaufre-d6f71f.netlify.app
+# Live Site : https://project-car-finder.netlify.app
 
 
 There should be 6 vehicle cards in the 'Browse' page by default. The db is seeded via a cronjob on every 12th minute. If cards are missing the website will still perform as expected however features such as the sort and search may be difficult to test.
