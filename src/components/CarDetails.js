@@ -45,9 +45,9 @@ function CarDetails(){
                     <>
                         <p>Please provide us with your contact information and we will contact you promptly!</p>
                             <form onSubmit={handleSubmit}>
-                                <input type="text" placeholder="Name">
-                                </input><input type="text" placeholder="Email"></input>
-                                <input type="text" placeholder="Phone"></input>
+                                <input required type="text" placeholder="Name"></input>
+                                <input required type="email" placeholder="Email"></input>
+                                <input required type="tel" placeholder="Phone"></input>
                                 <input type="submit"></input>
                             </form>
                     </>
