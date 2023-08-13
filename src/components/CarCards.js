@@ -14,7 +14,7 @@ function CarCards ({car, onHeartClick, onDeleteClick}){
 
     return (
         <div className="card">
-            <img src={image} alt={make+model+year} ></img>
+            <img src={image} alt={make+model+year} loading='lazy' ></img>
             <div className='middle'>
                 <Link to={`/browse/${id}`}>View More Details</Link>
             </div>
