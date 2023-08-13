@@ -189,6 +189,13 @@ hr{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.footer>form {
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 `
 
 export default StyledContainer

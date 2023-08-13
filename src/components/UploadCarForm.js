@@ -52,8 +52,8 @@ function UploadCar({cars, setCars}){
                     <form onSubmit={handleSubmit}>
                         <input required onChange={handleFormChange} name='make' value={newCar.make} type="text" placeholder="Make"></input>
                         <input required onChange={handleFormChange} name='model' value={newCar.model}type="text" placeholder="Model"></input>
-                        <input required onChange={handleFormChange} name='year' value={newCar.year}type="text" placeholder="Year"></input>
-                        <input required onChange={handleFormChange} name='price' value={newCar.price}type="number" placeholder="Price"></input>
+                        <input required onChange={handleFormChange} name='year' value={newCar.year}type="number" min='1886' max='2023' placeholder="Year"></input>
+                        <input required onChange={handleFormChange} name='price' value={newCar.price}type="number" min='0' placeholder="Price"></input>
                         <input required onChange={handleFormChange} name='image' value={newCar.image}type="text" placeholder="Image URL"></input>
                         <input required onChange={handleFormChange} name='summary' value={newCar.summary} type="textbox" placeholder="Notes"></input>
                         <input type="submit"></input>
