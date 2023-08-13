@@ -47,7 +47,7 @@ function CarDetails(){
                             <form onSubmit={handleSubmit}>
                                 <input required type="text" placeholder="Name"></input>
                                 <input required type="email" placeholder="Email"></input>
-                                <input required type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone"></input>
+                                <input required type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxx (include dashes)"></input>
                                 <input type="submit"></input>
                             </form>
                     </>
