@@ -196,6 +196,10 @@ hr{
     flex-direction: column;
     justify-content: space-between;
 }
+
+input[type=submit] {
+    cursor: pointer;
+}
 `
 
 export default StyledContainer
