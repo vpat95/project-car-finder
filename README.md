@@ -37,14 +37,12 @@ One of the challenges faced in this project was avoiding the tempation to use th
 1. Fork and Clone this directory
 2. Open your terminal and navigate to project directory(../project-car-finder)
 3. Check Dependencies
-    a. Verify npm is installed by running '$ npm -v'
-        - if installed continue to next step 
-        - if not installed, vist: https://nodejs.org/en#home-downloadhead and follow instructions
-4. Run npm i json-server
+a. Verify npm is installed by running '$ npm -v'
+- if installed continue to next step 
+- if not installed, vist: https://nodejs.org/en#home-downloadhead and follow instructions
 5. In the project directory still, run 'npm install'
-7. Open a new tab/window and navigate to same project directory and enter 'npm run server'
-8. In the original terminal run 'npm start'
-9. Once the command completes execution, navigate to the provided link
+8. Once npm is installed run 'npm start'
+9. Once the command completes execution, navigate to the provided url
 
 We have provided an optional image url you can use for the image url when creating a new listing
 copy as follows: "/images/rusty.jpg"
