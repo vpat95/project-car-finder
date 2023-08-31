@@ -60,7 +60,7 @@ function UploadCar({cars, setCars}){
                     </form>
                 </div>
                 
-                <img src="/images/goodbye.jpg" alt='car driving away' style={{maxWidth:'90%', margin:'auto', paddingTop:'5%', paddingBottom: '2%'}}></img>
+                <img src="https://res.cloudinary.com/dvya2gtov/image/upload/v1693441218/goodbye_qlftbz.jpg" alt='car driving away' style={{maxWidth:'90%', margin:'auto', paddingTop:'5%', paddingBottom: '2%'}}></img>
             </div>
         </StyledContainer>
     )

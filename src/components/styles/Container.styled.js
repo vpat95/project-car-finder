@@ -37,6 +37,7 @@ text-align: left;
 }
 
 
+
 .card {
     max-width:500px;
     padding-top: 20px;
@@ -199,6 +200,12 @@ hr{
 
 input[type=submit] {
     cursor: pointer;
+}
+
+@media (width <= 760px){
+    .detailedCard{
+        width: 75%;
+    }
 }
 `
 

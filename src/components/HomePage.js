@@ -13,13 +13,13 @@
                 </div>
                 <div className='grid'>
                     <div className="flow">
-                        <img src='/images/bmwOld.jpg' alt='unrestored BMW 3 series'/>
+                        <img src='https://res.cloudinary.com/dvya2gtov/image/upload/v1693440922/bmwOld_owsp2p.jpg' alt='unrestored BMW 3 series'/>
                         <div className="middle">
                             <div className="text">Before</div>
                         </div>
                     </div>
                     <div className="flow">
-                        <img src='/images/bmwNew.jpg' alt='unrestored BMW 3 series'/>
+                        <img src='https://res.cloudinary.com/dvya2gtov/image/upload/v1693441028/bmwNew_ugtagk.jpg' alt='unrestored BMW 3 series'/>
                         <div className="middle">
                             <div className="text">After</div>
                         </div>

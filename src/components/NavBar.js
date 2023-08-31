@@ -3,7 +3,7 @@ import {StyledNavBar} from './styles/NavBar.styled'
 
 function NavBar(){
     const activeStyle = {
-        border: '3px solid white',
+        borderBottom: '3px solid white',
         padding: '3px'
     }
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
 
-    margin-bottom: 20px;
+    margin-left: 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 15px;

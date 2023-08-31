@@ -37,9 +37,9 @@ One of the challenges faced in this project was avoiding the tempation to use th
 1. Fork and Clone this directory
 2. Open your terminal and navigate to project directory(../project-car-finder)
 3. Check Dependencies
-a. Verify npm is installed by running '$ npm -v'
-- if installed continue to next step 
-- if not installed, vist: https://nodejs.org/en#home-downloadhead and follow instructions
+- Verify npm is installed by running '$ npm -v'
+- - if installed continue to next step 
+- - if not installed, vist: https://nodejs.org/en#home-downloadhead and follow instructions
 5. In the project directory still, run 'npm install'
 8. Once npm is installed run 'npm start'
 9. Once the command completes execution, navigate to the provided url

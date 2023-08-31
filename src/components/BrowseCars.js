@@ -17,9 +17,8 @@ function BrowseCars({cars, onHeartClick, onDeleteClick}){
             return obj
         }
     }
-    const sortedCars = sortCars(cars)
 
-    const filteredCars = sortedCars
+    const filteredCars = sortCars(cars)
     .filter(car => 
         car.make.toLowerCase().includes(formData.search.toLowerCase()) || 
         car.model.toLowerCase().includes(formData.search.toLocaleLowerCase()) || 
