@@ -33,7 +33,7 @@ function App() {
       fetch(`${process.env.REACT_APP_API_URL}/cars`)
       .then(r => r.json())
       .then(data => setCars(data))
-  },[setCars])
+  },[])
 
 
   function handleHeart (id, car){
